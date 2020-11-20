@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="../product/product.css" />
+    <link rel="stylesheet" href="../product/modal.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <h2>SHOPPING CENTER</h2>
+      <div class="topnav">
+        <a class="active" href="../home/home.html">Home Page</a>
+        <ui: include src="../product/product.html"/>
+        <a href="../product/product.html">Product List</a>
+        <a href="../checkOut/checkOut.html"
+          >Cart Page <span class="cart-number">0</span></a
+        >
+        <!--  <a href="../cartpage/cart.html">Product Details </a>-->
+      </div>
+    </header>
+    <h2>Products to choose from</h2>
+    <div class="container">
+      <div class="options">
+        <img src="picture1.jpeg" />
+        <h4 class="description">Clothes for both genders</h4>
+        <button class="clothesbutton">clothes</button>
+      </div>
+      <div class="options">
+        <img src="picture2.jpeg" />
+        <h4 class="description">Sneakers for both genders</h4>
+        <button class="sneakersbutton">Sneakers</button>
+      </div>
+      <div class="options">
+        <img src="picture3.jpeg" />
+        <h4 class="description">Cars</h4>
+        <button class="carsbutton">Cars</button>
+      </div>
+    </div>
+
+    <div class="products-div"></div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="product-content">
+          <div class="details">
+            <select class="colorSelector">
+              <option value="black">black</option>
+              <option value="white">white</option>
+              <option value="grey">grey</option>
+            </select>
+            <spam class="qty">Quantity</spam>
+            <input type="text" class="inputstyle" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../product/product.js"></script>
+  </body>
+</html>
